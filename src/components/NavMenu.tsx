@@ -8,7 +8,7 @@ const NavMenu = () => {
       template: () => (
         <NavLink
           to="/portfolios"
-          className="flex gap-2 w-full align-content-start p-3 text-white"
+          className="flex gap-2 w-full align-content-start p-3 text-white border-round-sm no-underline"
         >
           <span className="pi pi-briefcase" />
           Portfolios
@@ -19,7 +19,7 @@ const NavMenu = () => {
       template: () => (
         <NavLink
           to="/top-companies"
-          className="flex gap-2 w-full align-content-start p-3 text-white"
+          className="flex gap-2 w-full align-content-start p-3 text-white border-round-sm no-underline"
         >
           <span className="pi pi-chart-bar" />
           Top Companies
@@ -29,9 +29,9 @@ const NavMenu = () => {
   ];
 
   return (
-    <div>
+    <nav className="h-screen bg-bluegray-900 p-2 pt-8">
       <Menu model={items} />
-    </div>
+    </nav>
   );
 };
 

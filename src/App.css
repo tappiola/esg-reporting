@@ -2,7 +2,19 @@
   text-align: center;
 }
 
-.p-menuitem-icon{
-  width: 20px;
-  height: 20px;
+* {
+  box-sizing: border-box;
+}
+
+.p-menuitem a.active {
+  font-weight: 700;
+  background-color: var(--surface-card);
+}
+
+#portfolio .p-card-content {
+  padding-block: 0;
+}
+
+#portfolio {
+  min-height: 500px;
 }

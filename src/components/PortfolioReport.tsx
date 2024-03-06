@@ -28,8 +28,8 @@ const PortfolioReport = () => {
         Impact of products and services to sustainability themes
       </p>
       <div className="flex gap-4 justify-content-center">
-        {Object.values(THEME).map((theme) => (
-          <div className="flex flex-column align-items-center">
+        {Object.values(THEME).map((theme, index) => (
+          <div key={index} className="flex flex-column align-items-center">
             <p className="font-semibold">{THEME_NAMES[theme]}</p>
             <Knob
               value={Math.round((100 * getGoodRevenue(theme)) / totalRevenue)}
